@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ashalagari.karnabanu.blastir.MainActivity"
+    >
+    <item
+        android:id="@+id/bluetoothSwitch"
+        android:title="bluetooth"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_connect"
+        android:orderInCategory="1"
+        android:title="Connect"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="2"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

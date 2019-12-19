@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:background="@drawable/popup_backgroud"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectadivicelable"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#868686"
+        android:text="Select a Bluetooth device"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paireddiviceslable"
+        android:textColor="#ffffff"
+        android:background="#4d4c4c"
+        android:text="Paired Bluetooth Device"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/devicesList"
+            android:divider="#999898"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/paired_device_selector"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:id="@+id/scanButton"
+            android:layout_weight="1"
+            android:layout_marginLeft="-4.5dp"
+            android:layout_marginRight="-3.5dp"
+            android:layout_marginTop="-3.5dp"
+            android:layout_marginBottom="-6.5dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancelButton"
+            android:layout_weight="1"
+            android:layout_marginLeft="-3.5dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_marginTop="-3.5dp"
+            android:layout_marginBottom="-6.5dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
